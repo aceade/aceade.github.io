@@ -2,6 +2,8 @@
 :root {
     --vt-c-black: #181818;
     --vt-c-white: #ffffee;
+    --vt-link-default: #64cc72;
+    --vt-link-clicked: #def326;
 }
 
 html {
@@ -33,10 +35,18 @@ h2 {
 
 a {
     font-weight: bold;
-    color: var(--vt-c-white);
+    color: var(--vt-link-default);
+}
+
+a:hover {
+    color: var(--vt-link-clicked);
 }
 
 .wrapper {
     text-align: center;
     vertical-align: center;
+}
+
+.aside {
+    font-size: 14px;
 }
