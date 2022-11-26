@@ -1,0 +1,26 @@
+
+:root {
+    --vt-c-black: #181818;
+    --vt-c-white: #ffffee;
+}
+
+html {
+    background-color: var(--vt-c-black);
+    color: var(--vt-c-white);
+    font-size: 20px;
+}
+
+#header {
+    padding: 10px;
+}
+
+.links li {
+    list-style: "\261E";
+    
+}
+
+.links a {
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--vt-c-white);
+}
