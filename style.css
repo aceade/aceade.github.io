@@ -2,12 +2,22 @@
 :root {
     --vt-c-black: #181818;
     --vt-c-white: #ffffee;
+    --vt-link-default: #64cc72;
+    --vt-link-clicked: #def326;
 }
 
 html {
     background-color: var(--vt-c-black);
     color: var(--vt-c-white);
     font-size: 20px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
 }
 
 #header {
@@ -21,6 +31,22 @@ html {
 
 .links a {
     margin-left: 10px;
+}
+
+a {
     font-weight: bold;
-    color: var(--vt-c-white);
+    color: var(--vt-link-default);
+}
+
+a:hover {
+    color: var(--vt-link-clicked);
+}
+
+.wrapper {
+    text-align: center;
+    vertical-align: center;
+}
+
+.aside {
+    font-size: 14px;
 }
