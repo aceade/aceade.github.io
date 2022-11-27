@@ -2,7 +2,7 @@
 :root {
     --vt-c-black: #181818;
     --vt-c-white: #ffffee;
-    --vt-link-default: #64cc72;
+    --vt-link-default: #00bd7e;
     --vt-link-clicked: #def326;
 }
 
@@ -14,10 +14,12 @@ html {
 
 h1 {
     font-size: 48px;
+    font-family: "Gaelic", "Times New Roman", serif;
 }
 
 h2 {
     font-size: 32px;
+    font-family: "Gaelic", "Times New Roman", serif;
 }
 
 #header {
@@ -49,4 +51,17 @@ a:hover {
 
 .aside {
     font-size: 14px;
+}
+
+#authorImg {
+    float: right;
+    max-height: 100px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@font-face {
+    font-family: "Gaelic";
+    src: url("fonts/Bunchl.ttf");
 }
