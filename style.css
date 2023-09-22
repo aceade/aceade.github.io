@@ -14,12 +14,12 @@ html {
 
 h1 {
     font-size: 48px;
-    font-family: "Gaelic", "Times New Roman", serif;
+    font-family: "Times New Roman", serif;
 }
 
 h2 {
     font-size: 32px;
-    font-family: "Gaelic", "Times New Roman", serif;
+    font-family: "Times New Roman", serif;
 }
 
 header {
@@ -59,11 +59,6 @@ a:hover {
     position: absolute;
     top: 10px;
     right: 10px;
-}
-
-@font-face {
-    font-family: "Gaelic";
-    src: url("fonts/Bunchl.ttf");
 }
 
 .linksGrid {
