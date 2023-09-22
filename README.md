@@ -3,3 +3,4 @@ Repository for my github.io landing page/portfolio. Keeping this with pure HTML/
 
 ## Third-party assets
 - [Bunchló Gael font](https://www.ffonts.net/Bunchl.font) - originally created by Vincent Morley in 1996.
+- [Boxicons](https://boxicons.com) - icons for social media and other links
