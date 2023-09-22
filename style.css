@@ -22,7 +22,7 @@ h2 {
     font-family: "Gaelic", "Times New Roman", serif;
 }
 
-#header {
+header {
     padding: 10px;
 }
 
@@ -64,4 +64,62 @@ a:hover {
 @font-face {
     font-family: "Gaelic";
     src: url("fonts/Bunchl.ttf");
+}
+
+.linksGrid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    padding: 5px;
+    background: lightgray;
+    border-radius: 10%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.link a > p {
+    display: none;
+}
+
+
+.link img {
+    min-width: 80px;
+}
+
+@media (min-width: 500px) {
+
+    .linksGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .link a > p {
+        color: black;
+        padding: 1px;
+        border-radius: 5px;
+        text-align: center;
+        display: block;
+        font-weight: initial;
+    }
+
+    .link a:hover > p {
+        color: lightgray;
+        background: black;
+    }
+    
+
+    .link {
+        max-width: 320px;
+        
+    }
+
+    .link img {
+        min-width: 160px;
+    }
 }
