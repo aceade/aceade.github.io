@@ -4,6 +4,7 @@
     --vt-c-white: #ffffee;
     --vt-link-default: #00bd7e;
     --vt-link-clicked: #def326;
+    box-sizing: content-box;
 }
 
 html {
@@ -15,33 +16,30 @@ html {
 h1 {
     font-size: 48px;
     font-family: "Times New Roman", serif;
+    color: var(--vt-link-default);
 }
 
 h2 {
     font-size: 32px;
     font-family: "Times New Roman", serif;
+    color: var(--vt-link-default);
 }
 
 header {
     padding: 10px;
 }
 
-.links li {
-    list-style: "\261E";
-    
-}
-
-.links a {
-    margin-left: 10px;
-}
-
 a {
     font-weight: bold;
-    color: var(--vt-link-default);
+    color: var(--vt-c-black);
+    padding: 5px;
+    border-radius: 20px;
+    width: 100%;
 }
 
 a:hover {
-    color: var(--vt-link-clicked);
+    color: var(--vt-link-default);
+    background: var(--vt-c-black);
 }
 
 .wrapper {
@@ -67,6 +65,9 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 10px solid var(--vt-link-default);
 }
 
 .link {
@@ -76,15 +77,20 @@ a:hover {
     align-items: center;
     justify-content: center;
     display: flex;
+    height: 100%;
 }
 
-.link a > p {
+p.hideOnMobile {
     display: none;
 }
 
 
 .link img {
     min-width: 80px;
+    max-width: 160px;
+    border-radius: 10px;
+    float: left;
+    width: 100%;
 }
 
 @media (min-width: 500px) {
@@ -95,19 +101,13 @@ a:hover {
     }
 
     .link a > p {
-        color: black;
         padding: 1px;
         border-radius: 5px;
-        text-align: center;
+        text-align: right;
         display: block;
         font-weight: initial;
     }
 
-    .link a:hover > p {
-        color: lightgray;
-        background: black;
-    }
-    
 
     .link {
         max-width: 320px;
