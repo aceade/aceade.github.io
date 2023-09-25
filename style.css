@@ -29,6 +29,11 @@ header {
     padding: 10px;
 }
 
+#cvLink {
+    color: var(--vt-link-default);
+    padding: 0px;
+}
+
 a {
     color: var(--vt-c-black);
     padding: 5px;
