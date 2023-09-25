@@ -30,7 +30,6 @@ header {
 }
 
 a {
-    font-weight: bold;
     color: var(--vt-c-black);
     padding: 5px;
     border-radius: 20px;
@@ -46,10 +45,6 @@ a:hover {
 .wrapper {
     text-align: center;
     vertical-align: center;
-}
-
-.aside {
-    font-size: 14px;
 }
 
 #authorImg {
@@ -88,6 +83,10 @@ a:hover {
     height: 100%;
 }
 
+.linkTitle {
+    font-weight: bold;
+}
+
 p.hideOnMobile {
     display: none;
 }
@@ -101,6 +100,10 @@ p.hideOnMobile {
     width: 100%;
 }
 
+a:hover > img.invert {
+    filter: invert();
+}
+
 @media (min-width: 500px) and (max-width: 900px) {
     .linksGrid {
         grid-template-columns: 1fr 1fr 1fr;
@@ -112,7 +115,6 @@ p.hideOnMobile {
         border-radius: 5px;
         text-align: right;
         display: block;
-        font-weight: initial;
     }
 }
 
@@ -128,7 +130,6 @@ p.hideOnMobile {
         border-radius: 5px;
         text-align: right;
         display: block;
-        font-weight: initial;
     }
 
 
