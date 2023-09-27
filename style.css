@@ -102,8 +102,9 @@ p.hideOnMobile {
     min-width: 80px;
     max-width: 160px;
     border-radius: 10px;
-    float: left;
+    float: right;
     width: 100%;
+    margin-right: 10px;
 }
 
 a:hover > img.invert {
@@ -123,6 +124,10 @@ a:hover > img.invert {
         text-align: right;
         display: block;
     }
+
+    p.hideOnMobile {
+        display: block;
+    }
 }
 
 @media (min-width: 901px) and (max-width: 1280px) {
@@ -136,6 +141,11 @@ a:hover > img.invert {
         padding: 1px;
         border-radius: 5px;
         text-align: right;
+        display: block;
+        float: right;
+    }
+
+    p.hideOnMobile {
         display: block;
     }
 
@@ -154,5 +164,9 @@ a:hover > img.invert {
     .linksGrid {
         grid-template-columns: repeat(5, 1fr);
         gap: 2rem;
-    } 
+    }
+
+    p.hideOnMobile {
+        display: block;
+    }
 }
