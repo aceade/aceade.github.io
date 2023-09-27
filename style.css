@@ -112,7 +112,8 @@ a:hover > img.invert {
 
 @media (min-width: 500px) and (max-width: 900px) {
     .linksGrid {
-        grid-template-columns: 1fr 1fr 1fr;
+        /* equivalent to grid-template-columns: 1fr 1fr 1fr;*/
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
 
@@ -124,10 +125,10 @@ a:hover > img.invert {
     }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 901px) and (max-width: 1280px) {
 
     .linksGrid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
     }
 
@@ -147,4 +148,11 @@ a:hover > img.invert {
     .link img {
         min-width: 160px;
     }
+}
+
+@media (min-width: 1281px) {
+    .linksGrid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+    } 
 }
