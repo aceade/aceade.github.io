@@ -42,7 +42,11 @@ a {
     height: calc(100% - 15px);
 }
 
-a:hover {
+/*
+ * If hovering over a link or navigating by using the Tab key, 
+ * make it clear which link we're focusssed on.
+ */
+a:hover, a:focus {
     color: var(--vt-link-default);
     background: var(--vt-c-black);
 }
@@ -107,7 +111,10 @@ p.hideOnMobile {
     margin-right: 10px;
 }
 
-a:hover > img.invert {
+/*
+ * Some of the icons are painted in black.
+ */
+a:hover > img.invert, a:focus > img.invert {
     filter: invert();
 }
 
