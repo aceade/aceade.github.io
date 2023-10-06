@@ -90,6 +90,9 @@ a:hover, a:focus {
     justify-content: center;
     display: flex;
     height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 320px;
 }
 
 .linkTitle {
@@ -105,10 +108,9 @@ p.hideOnMobile {
 .link img {
     min-width: 80px;
     max-width: 160px;
-    border-radius: 10px;
-    float: right;
+    border-radius: 5px;
     width: 100%;
-    margin-right: 10px;
+    margin: 10px auto 0 auto;
 }
 
 /*
@@ -128,7 +130,7 @@ a:hover > img.invert, a:focus > img.invert {
     .link a > p {
         padding: 1px;
         border-radius: 5px;
-        text-align: right;
+        text-align: left;
         display: block;
     }
 
@@ -147,7 +149,7 @@ a:hover > img.invert, a:focus > img.invert {
     .link a > p {
         padding: 1px;
         border-radius: 5px;
-        text-align: right;
+        text-align: left;
         display: block;
         float: right;
     }
@@ -169,7 +171,7 @@ a:hover > img.invert, a:focus > img.invert {
 
 @media (min-width: 1281px) {
     .linksGrid {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
     }
 
