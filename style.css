@@ -51,6 +51,15 @@ a:hover, a:focus {
     background: var(--vt-c-black);
 }
 
+.error > a {
+    color: var(--vt-link-default);
+}
+
+.error > a:hover, a:focus {
+    color: var(--vt-c-black);
+    background-color: var(--vt-c-white);
+}
+
 .wrapper {
     text-align: center;
     vertical-align: center;
