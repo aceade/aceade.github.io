@@ -25,6 +25,11 @@ h2 {
     color: var(--vt-link-default);
 }
 
+h3 {
+    color: var(--vt-link-default);
+    font-style: italic;
+}
+
 header {
     padding: 10px;
 }
